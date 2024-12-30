@@ -11,7 +11,8 @@ public class Question {
     @Id
     @GeneratedValue
     public int id1;
-    @Column
+    @Lob
+    @Column(columnDefinition = "TEXT")
     public String Question;
     @Column
     public String username;
